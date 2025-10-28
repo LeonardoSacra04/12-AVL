@@ -147,7 +147,6 @@ NO* girarDireita(NO* y) {
     x->dir = y;
     alturaNo(x);
     alturaNo(y);
-    return raiz = x;
    /* Rotação simples à direita  
              y                x  
             / \              / \  
@@ -163,7 +162,7 @@ NO* girarDireita(NO* y) {
    // Passo 5: Retorne o novo nó raiz ('x').  
 
 	// provisoriamente retorna o ponteiro passado como parâmetro
-	return y; 
+	return x; 
 }  
 
 NO* girarEsquerda(NO* x) {  
@@ -175,7 +174,6 @@ NO* girarEsquerda(NO* x) {
     y->esq = x;
     alturaNo(x);
     alturaNo(y);
-    return raiz = y;
    /* Rotação simples à esquerda  
            x                    y  
           / \                  / \  
@@ -192,7 +190,7 @@ NO* girarEsquerda(NO* x) {
 
 
     // provisoriamente retorna o ponteiro passado como parâmetro
-    return x; 
+    return y; 
 }
 
 NO* insereArvore(NO* no, int valor) {
